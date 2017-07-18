@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Jekyll and Static Sites - by Sid</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+	<!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/material-kit.css" rel="stylesheet"/>
+	<link href="assets/css/demo.css" rel="stylesheet" />
+
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+
+	<style>
+		pre.prettyprint{
+		    background-color: #eee;
+		    border: 0px;
+		    margin-bottom: 60px;
+		    margin-top: 30px;
+		    padding: 20px;
+		    text-align: left;
+		}
+		.atv, .str{
+		    color: #05AE0E;
+		}
+		.tag, .pln, .kwd{
+		    color: #3472F7;
+		}
+		.atn{
+		    color: #2C93FF;
+		}
+		.pln{
+		    color: #333;
+		}
+		.com{
+		    color: #999;
+		}
+		.space-top{
+		    margin-top: 50px;
+		}
+		.btn-primary .caret{
+		    border-top-color: #3472F7;
+		    color: #3472F7;
+		}
+		.area-line{
+		    border: 1px solid #999;
+		    border-left: 0;
+		    border-right: 0;
+		    color: #666;
+		    display: block;
+		    margin-top: 20px;
+		    padding: 8px 0;
+		    text-align: center;
+		}
+		.area-line a{
+		    color: #666;
+		}
+		.container-fluid{
+		    padding-right: 15px;
+		    padding-left: 15px;
+		}
+		.table-shopping .td-name{
+			min-width: 130px;
+		}
+	</style>
+</head>
+
+<body class="components-page">
+
+<nav class="navbar navbar-danger navbar-transparent navbar-fixed-top navbar-color-on-scroll" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+      <a href="index.html">
+           <div class="logo-container">
+                <div class="logo">
+                    <img src="https://avatars3.githubusercontent.com/u/3083652?v=3&s=400" alt="Jekyll Logo">
+                </div>
+                <div class="brand">
+                    Jekyll = Static
+                </div>
+            </div>
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navigation-index">
+		<ul class="nav navbar-nav navbar-right">
+			<li>
+                <a href="index.html">
+					<i class="material-icons">home</i> Home
+				</a>
+            </li>
+			<li>
+                <a href="info.html">
+					<i class="material-icons">info</i> More info
+				</a>
+            </li>
+			<li>
+                <a href="https://github.com/sidpagariya/jekyll-static-pages/issues">
+					<i class="material-icons">help</i> Have an issue?
+				</a>
+            </li>
+    	</ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="wrapper">
+	<div class="header header-filter" style="background-image: url('assets/img/bg4.jpeg');">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<h1 class="title text-center">Jekyll = Static Pages</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div class="main main-raised">
+        <div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="fixed-section" data-spy="affix" data-offset-top="340">
+                    <ul>
+						<li><a href="#about">About</a></li>
+						<li><a href="#installation">Installation</a></li>
+                        <li><a href="#cms">What is a CMS?</a></li>
+						<li><a href="#why">Why Static?</a></li>
+						<li><a href="#liquid">Liquid Syntax</a></li>
+						<li><a href="#how-to">How-to</a></li>
+						<li><a href="#moving-on">Moving On</a></li>
+						<li><a href="#questions">Questions?</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8 col-md-offset-1">
+                <div class="tim-container">
+            <!-- buttons row -->
+			<div class="tim-row" id="about">
+				<h2 class="text-center">About</h2>
+				<p>Jekyll is a simple, blog-aware, static site generator perfect for personal, project, or organization sites. Think of it like a file-based CMS, without all the complexity. Jekyll takes your content, renders Markdown and Liquid templates, and spits out a complete, static website ready to be served by Apache, Nginx or another web server. Jekyll is the engine behind GitHub Pages, which you can use to host sites right from your GitHub repositories.</p>
+			</div>
+			<div class="tim-row" id="installation">
+                <h2 class="text-center">Installation</h2>
+                <h4>On Mac, you use the following command:</h3>
+                <code>gem install jekyll bundler</code>
+                <br />
+                <h4>On Windows, you can follow the steps given below:</h4>
+                <p>You first need to Download and Install a package manager version from <a href="https://rubyinstaller.org/downloads/">RubyInstaller Downloads</a>.
+                Then, you can run the following command:
+                </p>
+                <code>gem install jekyll bundler</code>
+			</div>
+            <div class="tim-row" id="cms">
+                <h2 class="text-center">What is a CMS, you ask?</h2>
+                <p>
+                    A CMS typically provides administrative control panels — which allow authors to write content that’s stored in a back-end database. When a visitor requests a URL, the CMS:
+                    <ol>
+                        <li>determines which page is required</li>
+                        <li>requests appropriate content from the database</li>
+                        <li>loads an HTML template (normally from the file system)</li>
+                        <li>renders the content within the template, and</li>
+                        <li>returns a formatted HTML page to the visitor’s browser.</li>
+                    </ol>
+                    This occurs almost instantly. The template can include code to generate menus according to the navigation hierarchy. Life is sweet, and more than one in four people choose the PHP/MySQL-powered open source WordPress CMS to manage their website.
+                </p>
+                <p>
+                    Unfortunately, a CMS raises a different set of issues:
+                    <ol>
+                        <li>You need to adhere to the CMS’s way of working. It can be awkward to add custom text or components.</li>
+                        <li>The server is doing more work, and performance can be affected.</li>
+                        <li>There are additional points of failure. A software upgrade or database failure can bring your site down.</li>
+                    </ol>
+                </p>
+			</div>
+
+			<div class="tim-row" id="why">
+                <h2 class="text-center">Why Go Static?</h2>
+                <p>Think back to the first website you built. Most developers start by creating a series of pages contained within individual HTML files. Each will call in assets such as images, CSS and perhaps a sprinkling of JavaScript. You possibly launched these files directly from the file system without a web server. Life was simple.</p>
+                <p>Difficulties arise as your site becomes larger and more complex. Consider navigation: it may be similar in every file, but adding a new page requires updates to every other. Even references to CSS and images can become awkward as folder structures evolve. You may have considered options such as server-side includes or PHP, but an easier option can be a content management system (CMS)...</p>
+                <p style="font-weight: 700">
+                    Static sites have more to offer:
+                    <ol style="font-weight: 700">
+                        <li>Flexibility</li>
+                        <li>Better Performance</li>
+                        <li>Fewer Server-side Dependencies</li>
+                        <li>Improved Reliability</li>
+                        <li>Superior Security</li>
+                        <li>Client Control Considerations</li>
+                        <li>Version Control and Testing</li>
+                    </ol>
+                </p>
+            </div>
+			<div class="tim-row" id="liquid">
+                <h2 class="text-center">Liquid Syntax</h2>
+                <p>Jekyll uses the <a href="https://shopify.github.io/liquid/">Liquid</a> templating language to process templates. All of the standard Liquid <a href="https://shopify.github.io/liquid/tags/control-flow/">tags</a> and <a href="https://shopify.github.io/liquid/filters/abs/">filters</a> are supported. Jekyll even adds a few handy filters and tags of its own to make common tasks easier.</p>
+			</div>
+			<div class="tim-row" id="how-to">
+                <h2 class="text-center">How-to: Tutorial</h2>
+                <h4>In case you wanted to experiment on Mac or Windows, here's something exciting:</h4>
+                <pre>
+# Create a new Jekyll site at ./myblog
+~ $ jekyll new myblog
+
+# Change into your new directory
+~ $ cd myblog
+
+# Build the site on the preview server
+~/myblog $ bundle exec jekyll serve
+
+# Now browse to http://localhost:4000</pre>
+			</div>
+			<div class="tim-row" id="moving-on">
+                <h2 class="text-center">Moving On</h2>
+                <h5>If you think this is something interesting and would like to continue making something cool like <a href="https://kamsc.github.io/">this</a> or <a href="https://kamsc.github.io/blog/">this</a>, just let me <a href="mailto:green1139@gmail.com">know</a>.</h5>
+			</div>
+			<div class="tim-row" id="questions">
+                <h2 class="text-center">Questions?</h2>
+                <h5>If you have any questions, feel free to drop me an email at: <a href="mailto:green1139@gmail.com">green1139@gmail.com</a> or just hit the "Having an issue" button in the navigation menu... I am always happy to help!</h5>
+			</div>
+            <!-- end row -->
+
+                <!-- end container -->
+            </div>
+
+        </div>
+        </div>
+    </div>
+    </div>
+    <footer class="footer footer-transparent">
+        <div class="container">
+            <nav class="pull-left">
+                <ul>
+        			<li>
+                        <a href="index.html">
+        					Home
+        				</a>
+                    </li>
+        			<li>
+                        <a href="info.html">
+        					More info
+        				</a>
+                    </li>
+        			<li>
+                        <a href="https://github.com/sidpagariya/jekyll-static-pages/issues">
+        					Have an issue?
+        				</a>
+                    </li>
+            	</ul>
+            </nav>
+            <div class="social-area pull-right">
+                <a class="btn btn-social btn-github btn-simple" href="https://github.com/sidpagariya">
+                    <i class="fa fa-github"></i>
+                </a>
+                <a class="btn btn-social btn-gitlab btn-simple" href="https://gitlab.com/sidpagariya">
+                    <i class="fa fa-gitlab"></i>
+                </a>
+                <a class="btn btn-social btn-twitter btn-simple" href="https://twitter.com/SidPagariya">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a class="btn btn-social btn-facebook btn-simple" href="https://www.facebook.com/SidPagariya">
+                    <i class="fa fa-facebook-square"></i>
+                </a>
+                <a class="btn btn-social btn-google btn-simple" href="https://plus.google.com/+SiddhantPagariyaCS">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+                <a class="btn btn-social btn-instagram btn-simple" href="https://instagram.com/solid_sid">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </div>
+            <div class="copyright">
+                &copy; 2017 Sid, made with <i class="fa fa-heart" style="color: red;"></i>
+            </div>
+        </div>
+    </footer>
+</div>
+
+</body>
+	<!--   Core JS Files   -->
+	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/material.min.js"></script>
+
+	<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+	<script src="assets/js/nouislider.min.js" type="text/javascript"></script>
+
+	<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
+	<script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
+
+	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+	<script src="assets/js/material-kit.js" type="text/javascript"></script>
+
+    <script>
+        var header_height;
+        var fixed_section;
+        var floating = false;
+
+        $().ready(function(){
+            suggestions_distance = $("#suggestions").offset();
+            pay_height = $('.fixed-section').outerHeight();
+
+			$(window).on('scroll', materialKit.checkScrollForTransparentNavbar);
+
+			// the body of this function is in assets/material-kit.js
+			materialKit.initSliders();
+        });
+    </script>
+
+</html>
